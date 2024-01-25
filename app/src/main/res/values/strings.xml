@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sunflower</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back">Back Button\n</string>
+    <string name="Share">Share Button</string>
+</resources>

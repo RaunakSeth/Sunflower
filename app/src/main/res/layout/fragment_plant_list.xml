@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBE6"
+    tools:context=".PlantListFragment">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/Shimmerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:columnCount="2"
+            android:horizontalSpacing="10dp"
+            android:orientation="horizontal"
+            android:useDefaultMargins="true"
+            android:verticalSpacing="10dp">
+
+            <include layout="@layout/plants_shimmer" />
+
+            <include layout="@layout/plants_shimmer" />
+
+            <include layout="@layout/plants_shimmer" />
+
+            <include layout="@layout/plants_shimmer" />
+
+            <include layout="@layout/plants_shimmer" />
+
+            <include layout="@layout/plants_shimmer" />
+
+            <include layout="@layout/plants_shimmer" />
+
+            <include layout="@layout/plants_shimmer" />
+
+            <include layout="@layout/plants_shimmer" />
+
+            <include layout="@layout/plants_shimmer" />
+
+        </GridLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MyGardernRecyclerView"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+<!--        tools:listitem="@layout/plants" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
