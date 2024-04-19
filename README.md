@@ -5,7 +5,7 @@ A gardening app illustrating Android development best practices with XMLs to dem
 
 ## Screenshots
 
-<img src="screenshots/SunflowerM3Screenshots.png"/>
+<img src="SunflowerM3Screenshots.png"/>
 
 ## Perenual API
 
